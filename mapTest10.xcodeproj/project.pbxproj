@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		500BC2151D92B2DC00A96B65 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 500BC2141D92B2DC00A96B65 /* Podfile */; };
 		5092AD941D92B0CE009E8E8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5092AD931D92B0CE009E8E8E /* main.m */; };
 		5092AD971D92B0CE009E8E8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5092AD961D92B0CE009E8E8E /* AppDelegate.m */; };
 		5092AD9A1D92B0CE009E8E8E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5092AD991D92B0CE009E8E8E /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		5092ADA21D92B0CE009E8E8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5092ADA01D92B0CE009E8E8E /* LaunchScreen.storyboard */; };
 		5092ADAD1D92B0CE009E8E8E /* mapTest10Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5092ADAC1D92B0CE009E8E8E /* mapTest10Tests.m */; };
 		5092ADB81D92B0CE009E8E8E /* mapTest10UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5092ADB71D92B0CE009E8E8E /* mapTest10UITests.m */; };
+		D213DD774696697B805D8E91 /* libPods-mapTest10.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1A5E43BB166CF1FFA3A2DF /* libPods-mapTest10.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08C247C093BAB220C981A5CF /* Pods-mapTest10.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapTest10.release.xcconfig"; path = "mapTest10/Pods/Target Support Files/Pods-mapTest10/Pods-mapTest10.release.xcconfig"; sourceTree = "<group>"; };
+		500BC2141D92B2DC00A96B65 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		5092AD8F1D92B0CE009E8E8E /* mapTest10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mapTest10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5092AD931D92B0CE009E8E8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5092AD951D92B0CE009E8E8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		5092ADB31D92B0CE009E8E8E /* mapTest10UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mapTest10UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5092ADB71D92B0CE009E8E8E /* mapTest10UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mapTest10UITests.m; sourceTree = "<group>"; };
 		5092ADB91D92B0CE009E8E8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F1A5E43BB166CF1FFA3A2DF /* libPods-mapTest10.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mapTest10.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D53D651BD3562165895BA805 /* Pods-mapTest10.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapTest10.debug.xcconfig"; path = "mapTest10/Pods/Target Support Files/Pods-mapTest10/Pods-mapTest10.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D213DD774696697B805D8E91 /* libPods-mapTest10.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +92,8 @@
 				5092ADAB1D92B0CE009E8E8E /* mapTest10Tests */,
 				5092ADB61D92B0CE009E8E8E /* mapTest10UITests */,
 				5092AD901D92B0CE009E8E8E /* Products */,
+				F443B2A49C96031EF55CF634 /* Pods */,
+				CFD70F60DF18153524FE73E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +118,7 @@
 				5092AD9E1D92B0CE009E8E8E /* Assets.xcassets */,
 				5092ADA01D92B0CE009E8E8E /* LaunchScreen.storyboard */,
 				5092ADA31D92B0CE009E8E8E /* Info.plist */,
+				500BC2141D92B2DC00A96B65 /* Podfile */,
 				5092AD921D92B0CE009E8E8E /* Supporting Files */,
 			);
 			path = mapTest10;
@@ -140,6 +150,23 @@
 			path = mapTest10UITests;
 			sourceTree = "<group>";
 		};
+		CFD70F60DF18153524FE73E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F1A5E43BB166CF1FFA3A2DF /* libPods-mapTest10.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F443B2A49C96031EF55CF634 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D53D651BD3562165895BA805 /* Pods-mapTest10.debug.xcconfig */,
+				08C247C093BAB220C981A5CF /* Pods-mapTest10.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5092ADBC1D92B0CE009E8E8E /* Build configuration list for PBXNativeTarget "mapTest10" */;
 			buildPhases = (
+				F0C0661B1AE326394E44CB75 /* [CP] Check Pods Manifest.lock */,
 				5092AD8B1D92B0CE009E8E8E /* Sources */,
 				5092AD8C1D92B0CE009E8E8E /* Frameworks */,
 				5092AD8D1D92B0CE009E8E8E /* Resources */,
+				6601F3B73CABA065245497F0 /* [CP] Embed Pods Frameworks */,
+				37C503D31BCF4AED1A24018F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,6 +281,7 @@
 			files = (
 				5092ADA21D92B0CE009E8E8E /* LaunchScreen.storyboard in Resources */,
 				5092AD9F1D92B0CE009E8E8E /* Assets.xcassets in Resources */,
+				500BC2151D92B2DC00A96B65 /* Podfile in Resources */,
 				5092AD9D1D92B0CE009E8E8E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +301,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37C503D31BCF4AED1A24018F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/mapTest10/Pods/Target Support Files/Pods-mapTest10/Pods-mapTest10-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6601F3B73CABA065245497F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/mapTest10/Pods/Target Support Files/Pods-mapTest10/Pods-mapTest10-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0C0661B1AE326394E44CB75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5092AD8B1D92B0CE009E8E8E /* Sources */ = {
@@ -425,10 +504,12 @@
 		};
 		5092ADBD1D92B0CE009E8E8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D53D651BD3562165895BA805 /* Pods-mapTest10.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TD673V7Y5F;
 				INFOPLIST_FILE = mapTest10/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapTest10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -437,10 +518,12 @@
 		};
 		5092ADBE1D92B0CE009E8E8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08C247C093BAB220C981A5CF /* Pods-mapTest10.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TD673V7Y5F;
 				INFOPLIST_FILE = mapTest10/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapTest10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -516,6 +599,7 @@
 				5092ADBE1D92B0CE009E8E8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5092ADBF1D92B0CE009E8E8E /* Build configuration list for PBXNativeTarget "mapTest10Tests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +608,7 @@
 				5092ADC11D92B0CE009E8E8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5092ADC21D92B0CE009E8E8E /* Build configuration list for PBXNativeTarget "mapTest10UITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +617,7 @@
 				5092ADC41D92B0CE009E8E8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,6 @@
+source 'https://github.com/CocoaPods/Specs.git'
+project '/Users/berjr/Desktop/mapTest10/mapTest10.xcodeproj'
+target 'mapTest10' do
+   pod 'GoogleMaps'
+   pod 'GooglePlaces'
+end
