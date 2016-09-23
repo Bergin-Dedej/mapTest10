@@ -59,7 +59,7 @@
     startLocation = locationManager.location.coordinate;
     
     camera = [GMSCameraPosition cameraWithLatitude:locationManager.location.coordinate.latitude longitude:locationManager.location.coordinate.longitude zoom:17];
-    //_mapView.camera = camera;
+
     _mapView = [GMSMapView mapWithFrame:CGRectMake(0,0,100,100) camera:camera];
     _mapView.myLocationEnabled = YES;
     UIEdgeInsets mapInsets = UIEdgeInsetsMake(100, 0, 0, 300);
