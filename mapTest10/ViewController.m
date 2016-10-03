@@ -9,14 +9,16 @@
 #import "ViewController.h"
 #import <GoogleMaps/GoogleMaps.h>
 #import <MapKit/MapKit.h>
+@import WatchConnectivity;
 
-
-@interface ViewController ()
+@interface ViewController () <WCSessionDelegate>
 
 @end
 
 @implementation ViewController {
     CLLocationManager *locationManager;
+    CLLocationDistance distanceRun;
+    int distanceRunInt;
     GMSCameraPosition *camera;
     //GMSMapView *mapView;
     double startLatitude;
@@ -32,18 +34,35 @@
 
     MKMapPoint p1 = MKMapPointForCoordinate(startLocation);
     MKMapPoint p2 = MKMapPointForCoordinate(locationManager.location.coordinate);
-    CLLocationDistance distanceRun = MKMetersBetweenMapPoints(p1, p2);
+    distanceRun = MKMetersBetweenMapPoints(p1, p2);
     
     if(distanceRun >= 150){
         NSString *congrats = @"Congrats you ran past 150 meters!";
         NSLog(congrats);
     }
     NSString *myString = [NSString stringWithFormat:@"%f", distanceRun];
+    distanceRunInt = distanceRun;
     NSLog(myString);
+    [self sendToWatch];
 
     camera = [GMSCameraPosition cameraWithLatitude:locationManager.location.coordinate.latitude longitude:locationManager.location.coordinate.longitude zoom:17];
     [_mapView animateToCameraPosition:camera];
  
+}
+
+- (void)sendToWatch {
+    NSDictionary *applicationData = [[NSDictionary alloc] initWithObjects:@[[NSString stringWithFormat:@"%d", distanceRunInt]]
+                                                                  forKeys:@[@"distanceRun"]];
+    
+    
+    [[WCSession defaultSession] sendMessage:applicationData
+                               replyHandler:^(NSDictionary *reply) {
+                                   //handle reply form Iphone app here
+                               }
+                               errorHandler:^(NSError *error) {
+                                   //catch any errors here
+                               }
+     ];
 }
 
 - (void)viewDidLoad {
@@ -63,7 +82,7 @@
     _mapView = [GMSMapView mapWithFrame:CGRectMake(0,0,100,100) camera:camera];
     _mapView.myLocationEnabled = YES;
     UIEdgeInsets mapInsets = UIEdgeInsetsMake(100, 0, 0, 300);
-    _mapView.padding = mapInsets;
+    //_mapView.padding = mapInsets;
     self.view = _mapView;
     CLLocationCoordinate2D circleCenter = CLLocationCoordinate2DMake(locationManager.location.coordinate.latitude, locationManager.location.coordinate.longitude);
     GMSCircle *circ = [GMSCircle circleWithPosition:circleCenter radius:150];
@@ -74,6 +93,13 @@
     marker.title = @"100 Points";
     marker.snippet = @"Star";
     marker.map = _mapView;    // Do any additional setup after loading the view, typically from a nib.
+    
+    if ([WCSession isSupported])
+    {
+        WCSession* session = [WCSession defaultSession];
+        session.delegate = self;
+        [session activateSession];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

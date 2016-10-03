@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>WatchMeTestMap.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>mapTest10.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>506C44971D9950CD00879F40</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>5092AD8E1D92B0CE009E8E8E</key>
 		<dict>
 			<key>primary</key>

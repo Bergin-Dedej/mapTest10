@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		500BC2151D92B2DC00A96B65 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 500BC2141D92B2DC00A96B65 /* Podfile */; };
+		506C44951D993D7600879F40 /* MainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 506C44941D993D7600879F40 /* MainMenu.m */; };
+		506C449C1D9950CE00879F40 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506C449A1D9950CE00879F40 /* Interface.storyboard */; };
+		506C449E1D9950CE00879F40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506C449D1D9950CE00879F40 /* Assets.xcassets */; };
+		506C44A51D9950CE00879F40 /* WatchMeTestMap Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 506C44A41D9950CE00879F40 /* WatchMeTestMap Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		506C44AB1D9950CE00879F40 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506C44AA1D9950CE00879F40 /* InterfaceController.m */; };
+		506C44AE1D9950CE00879F40 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 506C44AD1D9950CE00879F40 /* ExtensionDelegate.m */; };
+		506C44B01D9950CE00879F40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506C44AF1D9950CE00879F40 /* Assets.xcassets */; };
+		506C44B41D9950CE00879F40 /* WatchMeTestMap.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 506C44981D9950CD00879F40 /* WatchMeTestMap.app */; };
+		50868B711DA27D9800901142 /* LeaderBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 50868B701DA27D9800901142 /* LeaderBoard.m */; };
 		5092AD941D92B0CE009E8E8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5092AD931D92B0CE009E8E8E /* main.m */; };
 		5092AD971D92B0CE009E8E8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5092AD961D92B0CE009E8E8E /* AppDelegate.m */; };
 		5092AD9A1D92B0CE009E8E8E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5092AD991D92B0CE009E8E8E /* ViewController.m */; };
@@ -20,6 +29,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		506C44A61D9950CE00879F40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5092AD871D92B0CE009E8E8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 506C44A31D9950CE00879F40;
+			remoteInfo = "WatchMeTestMap Extension";
+		};
+		506C44B21D9950CE00879F40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5092AD871D92B0CE009E8E8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 506C44971D9950CD00879F40;
+			remoteInfo = WatchMeTestMap;
+		};
 		5092ADA91D92B0CE009E8E8E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5092AD871D92B0CE009E8E8E /* Project object */;
@@ -36,9 +59,47 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		506C44B81D9950CE00879F40 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				506C44A51D9950CE00879F40 /* WatchMeTestMap Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		506C44BC1D9950CE00879F40 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				506C44B41D9950CE00879F40 /* WatchMeTestMap.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		08C247C093BAB220C981A5CF /* Pods-mapTest10.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapTest10.release.xcconfig"; path = "mapTest10/Pods/Target Support Files/Pods-mapTest10/Pods-mapTest10.release.xcconfig"; sourceTree = "<group>"; };
 		500BC2141D92B2DC00A96B65 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		506C44941D993D7600879F40 /* MainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenu.m; sourceTree = "<group>"; };
+		506C44981D9950CD00879F40 /* WatchMeTestMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchMeTestMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		506C449B1D9950CE00879F40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		506C449D1D9950CE00879F40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		506C449F1D9950CE00879F40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		506C44A41D9950CE00879F40 /* WatchMeTestMap Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchMeTestMap Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		506C44A91D9950CE00879F40 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		506C44AA1D9950CE00879F40 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		506C44AC1D9950CE00879F40 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		506C44AD1D9950CE00879F40 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		506C44AF1D9950CE00879F40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		506C44B11D9950CE00879F40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50868B701DA27D9800901142 /* LeaderBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaderBoard.m; sourceTree = "<group>"; };
 		5092AD8F1D92B0CE009E8E8E /* mapTest10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mapTest10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5092AD931D92B0CE009E8E8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5092AD951D92B0CE009E8E8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,6 +121,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		506C44A11D9950CE00879F40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5092AD8C1D92B0CE009E8E8E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -85,12 +153,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		506C44991D9950CD00879F40 /* WatchMeTestMap */ = {
+			isa = PBXGroup;
+			children = (
+				506C449A1D9950CE00879F40 /* Interface.storyboard */,
+				506C449D1D9950CE00879F40 /* Assets.xcassets */,
+				506C449F1D9950CE00879F40 /* Info.plist */,
+			);
+			path = WatchMeTestMap;
+			sourceTree = "<group>";
+		};
+		506C44A81D9950CE00879F40 /* WatchMeTestMap Extension */ = {
+			isa = PBXGroup;
+			children = (
+				506C44A91D9950CE00879F40 /* InterfaceController.h */,
+				506C44AA1D9950CE00879F40 /* InterfaceController.m */,
+				506C44AC1D9950CE00879F40 /* ExtensionDelegate.h */,
+				506C44AD1D9950CE00879F40 /* ExtensionDelegate.m */,
+				506C44AF1D9950CE00879F40 /* Assets.xcassets */,
+				506C44B11D9950CE00879F40 /* Info.plist */,
+			);
+			path = "WatchMeTestMap Extension";
+			sourceTree = "<group>";
+		};
 		5092AD861D92B0CE009E8E8E = {
 			isa = PBXGroup;
 			children = (
 				5092AD911D92B0CE009E8E8E /* mapTest10 */,
 				5092ADAB1D92B0CE009E8E8E /* mapTest10Tests */,
 				5092ADB61D92B0CE009E8E8E /* mapTest10UITests */,
+				506C44991D9950CD00879F40 /* WatchMeTestMap */,
+				506C44A81D9950CE00879F40 /* WatchMeTestMap Extension */,
 				5092AD901D92B0CE009E8E8E /* Products */,
 				F443B2A49C96031EF55CF634 /* Pods */,
 				CFD70F60DF18153524FE73E5 /* Frameworks */,
@@ -103,6 +196,8 @@
 				5092AD8F1D92B0CE009E8E8E /* mapTest10.app */,
 				5092ADA81D92B0CE009E8E8E /* mapTest10Tests.xctest */,
 				5092ADB31D92B0CE009E8E8E /* mapTest10UITests.xctest */,
+				506C44981D9950CD00879F40 /* WatchMeTestMap.app */,
+				506C44A41D9950CE00879F40 /* WatchMeTestMap Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +210,8 @@
 				5092AD981D92B0CE009E8E8E /* ViewController.h */,
 				5092AD991D92B0CE009E8E8E /* ViewController.m */,
 				5092AD9B1D92B0CE009E8E8E /* Main.storyboard */,
+				506C44941D993D7600879F40 /* MainMenu.m */,
+				50868B701DA27D9800901142 /* LeaderBoard.m */,
 				5092AD9E1D92B0CE009E8E8E /* Assets.xcassets */,
 				5092ADA01D92B0CE009E8E8E /* LaunchScreen.storyboard */,
 				5092ADA31D92B0CE009E8E8E /* Info.plist */,
@@ -170,6 +267,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		506C44971D9950CD00879F40 /* WatchMeTestMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 506C44B91D9950CE00879F40 /* Build configuration list for PBXNativeTarget "WatchMeTestMap" */;
+			buildPhases = (
+				506C44961D9950CD00879F40 /* Resources */,
+				506C44B81D9950CE00879F40 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				506C44A71D9950CE00879F40 /* PBXTargetDependency */,
+			);
+			name = WatchMeTestMap;
+			productName = WatchMeTestMap;
+			productReference = 506C44981D9950CD00879F40 /* WatchMeTestMap.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		506C44A31D9950CE00879F40 /* WatchMeTestMap Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 506C44B51D9950CE00879F40 /* Build configuration list for PBXNativeTarget "WatchMeTestMap Extension" */;
+			buildPhases = (
+				506C44A01D9950CE00879F40 /* Sources */,
+				506C44A11D9950CE00879F40 /* Frameworks */,
+				506C44A21D9950CE00879F40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchMeTestMap Extension";
+			productName = "WatchMeTestMap Extension";
+			productReference = 506C44A41D9950CE00879F40 /* WatchMeTestMap Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		5092AD8E1D92B0CE009E8E8E /* mapTest10 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5092ADBC1D92B0CE009E8E8E /* Build configuration list for PBXNativeTarget "mapTest10" */;
@@ -180,10 +311,12 @@
 				5092AD8D1D92B0CE009E8E8E /* Resources */,
 				6601F3B73CABA065245497F0 /* [CP] Embed Pods Frameworks */,
 				37C503D31BCF4AED1A24018F /* [CP] Copy Pods Resources */,
+				506C44BC1D9950CE00879F40 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				506C44B31D9950CE00879F40 /* PBXTargetDependency */,
 			);
 			name = mapTest10;
 			productName = mapTest10;
@@ -235,6 +368,16 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Ber Jr";
 				TargetAttributes = {
+					506C44971D9950CD00879F40 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = TD673V7Y5F;
+						ProvisioningStyle = Automatic;
+					};
+					506C44A31D9950CE00879F40 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = TD673V7Y5F;
+						ProvisioningStyle = Automatic;
+					};
 					5092AD8E1D92B0CE009E8E8E = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = TD673V7Y5F;
@@ -270,11 +413,30 @@
 				5092AD8E1D92B0CE009E8E8E /* mapTest10 */,
 				5092ADA71D92B0CE009E8E8E /* mapTest10Tests */,
 				5092ADB21D92B0CE009E8E8E /* mapTest10UITests */,
+				506C44971D9950CD00879F40 /* WatchMeTestMap */,
+				506C44A31D9950CE00879F40 /* WatchMeTestMap Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		506C44961D9950CD00879F40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506C449E1D9950CE00879F40 /* Assets.xcassets in Resources */,
+				506C449C1D9950CE00879F40 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		506C44A21D9950CE00879F40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506C44B01D9950CE00879F40 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5092AD8D1D92B0CE009E8E8E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -351,11 +513,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		506C44A01D9950CE00879F40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506C44AE1D9950CE00879F40 /* ExtensionDelegate.m in Sources */,
+				506C44AB1D9950CE00879F40 /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5092AD8B1D92B0CE009E8E8E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50868B711DA27D9800901142 /* LeaderBoard.m in Sources */,
 				5092AD9A1D92B0CE009E8E8E /* ViewController.m in Sources */,
+				506C44951D993D7600879F40 /* MainMenu.m in Sources */,
 				5092AD971D92B0CE009E8E8E /* AppDelegate.m in Sources */,
 				5092AD941D92B0CE009E8E8E /* main.m in Sources */,
 			);
@@ -380,6 +553,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		506C44A71D9950CE00879F40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 506C44A31D9950CE00879F40 /* WatchMeTestMap Extension */;
+			targetProxy = 506C44A61D9950CE00879F40 /* PBXContainerItemProxy */;
+		};
+		506C44B31D9950CE00879F40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 506C44971D9950CD00879F40 /* WatchMeTestMap */;
+			targetProxy = 506C44B21D9950CE00879F40 /* PBXContainerItemProxy */;
+		};
 		5092ADAA1D92B0CE009E8E8E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5092AD8E1D92B0CE009E8E8E /* mapTest10 */;
@@ -393,6 +576,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		506C449A1D9950CE00879F40 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				506C449B1D9950CE00879F40 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		5092AD9B1D92B0CE009E8E8E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -412,6 +603,70 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		506C44B61D9950CE00879F40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = TD673V7Y5F;
+				INFOPLIST_FILE = "WatchMeTestMap Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mapTest10.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		506C44B71D9950CE00879F40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = TD673V7Y5F;
+				INFOPLIST_FILE = "WatchMeTestMap Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mapTest10.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		506C44BA1D9950CE00879F40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TD673V7Y5F;
+				IBSC_MODULE = WatchMeTestMap_Extension;
+				INFOPLIST_FILE = WatchMeTestMap/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mapTest10.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		506C44BB1D9950CE00879F40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TD673V7Y5F;
+				IBSC_MODULE = WatchMeTestMap_Extension;
+				INFOPLIST_FILE = WatchMeTestMap/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mapTest10.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
 		5092ADBA1D92B0CE009E8E8E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -583,6 +838,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		506C44B51D9950CE00879F40 /* Build configuration list for PBXNativeTarget "WatchMeTestMap Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				506C44B61D9950CE00879F40 /* Debug */,
+				506C44B71D9950CE00879F40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		506C44B91D9950CE00879F40 /* Build configuration list for PBXNativeTarget "WatchMeTestMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				506C44BA1D9950CE00879F40 /* Debug */,
+				506C44BB1D9950CE00879F40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5092AD8A1D92B0CE009E8E8E /* Build configuration list for PBXProject "mapTest10" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
