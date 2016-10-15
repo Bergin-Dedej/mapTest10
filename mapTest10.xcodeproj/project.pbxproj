@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		500BC2151D92B2DC00A96B65 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 500BC2141D92B2DC00A96B65 /* Podfile */; };
+		501A97EF1DAE56C6007979FD /* main.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 501A97EE1DAE56C6007979FD /* main.jpg */; };
+		501A97F71DAFBB59007979FD /* run_chat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 501A97F21DAFBB58007979FD /* run_chat.jpg */; };
+		501A97F81DAFBB59007979FD /* run_competition.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 501A97F31DAFBB58007979FD /* run_competition.jpg */; };
+		501A97F91DAFBB59007979FD /* run_leader board.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 501A97F41DAFBB59007979FD /* run_leader board.jpg */; };
+		501A97FA1DAFBB59007979FD /* run_Party run.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 501A97F51DAFBB59007979FD /* run_Party run.jpg */; };
+		501A97FB1DAFBB59007979FD /* run_trail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 501A97F61DAFBB59007979FD /* run_trail.jpg */; };
+		501A97FD1DB1100A007979FD /* run_comingsoon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 501A97FC1DB1100A007979FD /* run_comingsoon.jpg */; };
 		506C44951D993D7600879F40 /* MainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 506C44941D993D7600879F40 /* MainMenu.m */; };
 		506C449C1D9950CE00879F40 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506C449A1D9950CE00879F40 /* Interface.storyboard */; };
 		506C449E1D9950CE00879F40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506C449D1D9950CE00879F40 /* Assets.xcassets */; };
@@ -25,6 +32,11 @@
 		5092ADA21D92B0CE009E8E8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5092ADA01D92B0CE009E8E8E /* LaunchScreen.storyboard */; };
 		5092ADAD1D92B0CE009E8E8E /* mapTest10Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5092ADAC1D92B0CE009E8E8E /* mapTest10Tests.m */; };
 		5092ADB81D92B0CE009E8E8E /* mapTest10UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5092ADB71D92B0CE009E8E8E /* mapTest10UITests.m */; };
+		509CF07F1DB29B58004B2ECF /* Chat.m in Sources */ = {isa = PBXBuildFile; fileRef = 509CF07E1DB29B58004B2ECF /* Chat.m */; };
+		509CF0811DB29B6F004B2ECF /* Competition.m in Sources */ = {isa = PBXBuildFile; fileRef = 509CF0801DB29B6F004B2ECF /* Competition.m */; };
+		509CF0831DB29BB9004B2ECF /* Party.m in Sources */ = {isa = PBXBuildFile; fileRef = 509CF0821DB29BB9004B2ECF /* Party.m */; };
+		509CF0851DB29C0A004B2ECF /* TrailRun.m in Sources */ = {isa = PBXBuildFile; fileRef = 509CF0841DB29C0A004B2ECF /* TrailRun.m */; };
+		509CF0871DB29E0B004B2ECF /* ComingSoon.m in Sources */ = {isa = PBXBuildFile; fileRef = 509CF0861DB29E0B004B2ECF /* ComingSoon.m */; };
 		D213DD774696697B805D8E91 /* libPods-mapTest10.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1A5E43BB166CF1FFA3A2DF /* libPods-mapTest10.a */; };
 /* End PBXBuildFile section */
 
@@ -86,7 +98,14 @@
 
 /* Begin PBXFileReference section */
 		08C247C093BAB220C981A5CF /* Pods-mapTest10.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapTest10.release.xcconfig"; path = "mapTest10/Pods/Target Support Files/Pods-mapTest10/Pods-mapTest10.release.xcconfig"; sourceTree = "<group>"; };
-		500BC2141D92B2DC00A96B65 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		500BC2141D92B2DC00A96B65 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		501A97EE1DAE56C6007979FD /* main.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = main.jpg; path = Images/main.jpg; sourceTree = "<group>"; };
+		501A97F21DAFBB58007979FD /* run_chat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = run_chat.jpg; path = Images/run_chat.jpg; sourceTree = "<group>"; };
+		501A97F31DAFBB58007979FD /* run_competition.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = run_competition.jpg; path = Images/run_competition.jpg; sourceTree = "<group>"; };
+		501A97F41DAFBB59007979FD /* run_leader board.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "run_leader board.jpg"; path = "Images/run_leader board.jpg"; sourceTree = "<group>"; };
+		501A97F51DAFBB59007979FD /* run_Party run.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "run_Party run.jpg"; path = "Images/run_Party run.jpg"; sourceTree = "<group>"; };
+		501A97F61DAFBB59007979FD /* run_trail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = run_trail.jpg; path = Images/run_trail.jpg; sourceTree = "<group>"; };
+		501A97FC1DB1100A007979FD /* run_comingsoon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = run_comingsoon.jpg; path = Images/run_comingsoon.jpg; sourceTree = "<group>"; };
 		506C44941D993D7600879F40 /* MainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenu.m; sourceTree = "<group>"; };
 		506C44981D9950CD00879F40 /* WatchMeTestMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchMeTestMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		506C449B1D9950CE00879F40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -116,6 +135,11 @@
 		5092ADB31D92B0CE009E8E8E /* mapTest10UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mapTest10UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5092ADB71D92B0CE009E8E8E /* mapTest10UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mapTest10UITests.m; sourceTree = "<group>"; };
 		5092ADB91D92B0CE009E8E8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		509CF07E1DB29B58004B2ECF /* Chat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chat.m; sourceTree = "<group>"; };
+		509CF0801DB29B6F004B2ECF /* Competition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Competition.m; sourceTree = "<group>"; };
+		509CF0821DB29BB9004B2ECF /* Party.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Party.m; sourceTree = "<group>"; };
+		509CF0841DB29C0A004B2ECF /* TrailRun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrailRun.m; sourceTree = "<group>"; };
+		509CF0861DB29E0B004B2ECF /* ComingSoon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComingSoon.m; sourceTree = "<group>"; };
 		9F1A5E43BB166CF1FFA3A2DF /* libPods-mapTest10.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mapTest10.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53D651BD3562165895BA805 /* Pods-mapTest10.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapTest10.debug.xcconfig"; path = "mapTest10/Pods/Target Support Files/Pods-mapTest10/Pods-mapTest10.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,6 +177,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		501A97ED1DAE56A6007979FD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				501A97FC1DB1100A007979FD /* run_comingsoon.jpg */,
+				501A97F21DAFBB58007979FD /* run_chat.jpg */,
+				501A97F31DAFBB58007979FD /* run_competition.jpg */,
+				501A97F41DAFBB59007979FD /* run_leader board.jpg */,
+				501A97F51DAFBB59007979FD /* run_Party run.jpg */,
+				501A97F61DAFBB59007979FD /* run_trail.jpg */,
+				501A97EE1DAE56C6007979FD /* main.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		506C44991D9950CD00879F40 /* WatchMeTestMap */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,10 +250,16 @@
 				5092AD9B1D92B0CE009E8E8E /* Main.storyboard */,
 				506C44941D993D7600879F40 /* MainMenu.m */,
 				50868B701DA27D9800901142 /* LeaderBoard.m */,
+				509CF07E1DB29B58004B2ECF /* Chat.m */,
+				509CF0841DB29C0A004B2ECF /* TrailRun.m */,
+				509CF0801DB29B6F004B2ECF /* Competition.m */,
+				509CF0821DB29BB9004B2ECF /* Party.m */,
+				509CF0861DB29E0B004B2ECF /* ComingSoon.m */,
 				5092AD9E1D92B0CE009E8E8E /* Assets.xcassets */,
 				5092ADA01D92B0CE009E8E8E /* LaunchScreen.storyboard */,
 				5092ADA31D92B0CE009E8E8E /* Info.plist */,
 				500BC2141D92B2DC00A96B65 /* Podfile */,
+				501A97ED1DAE56A6007979FD /* Images */,
 				5092AD921D92B0CE009E8E8E /* Supporting Files */,
 			);
 			path = mapTest10;
@@ -442,9 +486,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				5092ADA21D92B0CE009E8E8E /* LaunchScreen.storyboard in Resources */,
+				501A97EF1DAE56C6007979FD /* main.jpg in Resources */,
+				501A97FA1DAFBB59007979FD /* run_Party run.jpg in Resources */,
 				5092AD9F1D92B0CE009E8E8E /* Assets.xcassets in Resources */,
+				501A97FD1DB1100A007979FD /* run_comingsoon.jpg in Resources */,
 				500BC2151D92B2DC00A96B65 /* Podfile in Resources */,
+				501A97F91DAFBB59007979FD /* run_leader board.jpg in Resources */,
+				501A97FB1DAFBB59007979FD /* run_trail.jpg in Resources */,
 				5092AD9D1D92B0CE009E8E8E /* Main.storyboard in Resources */,
+				501A97F71DAFBB59007979FD /* run_chat.jpg in Resources */,
+				501A97F81DAFBB59007979FD /* run_competition.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,9 +577,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				509CF0851DB29C0A004B2ECF /* TrailRun.m in Sources */,
 				50868B711DA27D9800901142 /* LeaderBoard.m in Sources */,
+				509CF07F1DB29B58004B2ECF /* Chat.m in Sources */,
+				509CF0831DB29BB9004B2ECF /* Party.m in Sources */,
 				5092AD9A1D92B0CE009E8E8E /* ViewController.m in Sources */,
 				506C44951D993D7600879F40 /* MainMenu.m in Sources */,
+				509CF0811DB29B6F004B2ECF /* Competition.m in Sources */,
+				509CF0871DB29E0B004B2ECF /* ComingSoon.m in Sources */,
 				5092AD971D92B0CE009E8E8E /* AppDelegate.m in Sources */,
 				5092AD941D92B0CE009E8E8E /* main.m in Sources */,
 			);

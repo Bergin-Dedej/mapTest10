@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main Menu-->
         <scene sceneID="jxr-Sp-nPv">
             <objects>
-                <viewController id="u5m-Rs-hJ8" sceneMemberID="viewController">
+                <viewController id="u5m-Rs-hJ8" customClass="MainMenu" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="da6-om-aIj"/>
                         <viewControllerLayoutGuide type="bottom" id="psP-2X-cx7"/>
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWR-w0-iWW">
-                                <frame key="frameInset" minY="290" width="375" height="87"/>
+                                <frame key="frameInset" minY="440" width="375" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 <state key="normal" title="Start Running">
@@ -27,66 +27,74 @@
                                     <color key="titleShadowColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="startRunning:" destination="u5m-Rs-hJ8" eventType="touchUpInside" id="4IE-pK-8RZ"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="cmv-QZ-hOo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbE-jB-jpo">
-                                <frame key="frameInset" minY="497" width="375" height="30"/>
+                                <frame key="frameInset" minX="147" minY="611" width="91" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Leader Board">
                                     <color key="titleColor" red="1" green="0.47242275724197491" blue="0.32400917260055961" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="leaderBoard:" destination="u5m-Rs-hJ8" eventType="touchUpInside" id="Jbb-GH-2LP"/>
                                     <segue destination="Zhb-3s-1fq" kind="show" id="pky-7b-pMJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWn-Zj-mYK">
-                                <frame key="frameInset" minX="121" minY="146" width="132" height="30"/>
+                                <frame key="frameInset" minX="46" minY="617" width="62" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Party Run">
                                     <color key="titleColor" red="0.97834537984391812" green="1" blue="0.26929659314469567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="partyRun:" destination="u5m-Rs-hJ8" eventType="touchUpInside" id="Yu4-8N-8qE"/>
                                     <segue destination="S9d-BU-fD7" kind="show" id="YFK-Hx-6ih"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gA-wC-Om7">
-                                <frame key="frameInset" minX="78" minY="76" width="219" height="30"/>
+                                <frame key="frameInset" minX="237" minY="545" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Competition Mode">
                                     <color key="titleColor" red="0.97834537984391812" green="1" blue="0.26929659314469567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="competition:" destination="u5m-Rs-hJ8" eventType="touchUpInside" id="Olk-B3-gr5"/>
                                     <segue destination="Aah-4M-If1" kind="show" id="FAX-DV-pPk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSG-su-LWF">
-                                <frame key="frameInset" minX="171" minY="418" width="129" height="30"/>
+                                <frame key="frameInset" minX="246" minY="611" width="129" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Chat">
                                     <color key="titleColor" red="0.97834537984391812" green="1" blue="0.26929659314469567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ix7-19-ooa">
-                                <frame key="frameInset" minX="169" minY="573" width="117" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Guild">
-                                    <color key="titleColor" red="0.97834537984391812" green="1" blue="0.26929659314469567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                                <connections>
+                                    <action selector="chat:" destination="u5m-Rs-hJ8" eventType="touchUpInside" id="EPo-bU-fXX"/>
+                                    <segue destination="CZL-pc-gQS" kind="show" id="v1Z-rD-BGd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaS-kj-a1O">
-                                <frame key="frameInset" minX="86" minY="215" width="203" height="30"/>
+                                <frame key="frameInset" minX="46" minY="535" width="79" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Choose a trail">
                                     <color key="titleColor" red="0.97834537984391812" green="1" blue="0.26929659314469567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="trail:" destination="u5m-Rs-hJ8" eventType="touchUpInside" id="Ec1-T6-hb0"/>
+                                    <segue destination="L3g-Mp-wyf" kind="show" id="Oty-mw-CtO"/>
+                                </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="main.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="L1Q-iC-Rzl">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -95,10 +103,91 @@
             </objects>
             <point key="canvasLocation" x="-423.19999999999999" y="165.06746626686657"/>
         </scene>
-        <!--View Controller-->
+        <!--Trail Run-->
+        <scene sceneID="aSg-AP-7Lo">
+            <objects>
+                <viewController id="L3g-Mp-wyf" customClass="TrailRun" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GNb-Ko-4Gd"/>
+                        <viewControllerLayoutGuide type="bottom" id="52y-A1-Ifj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OhA-Fl-F1D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEn-lJ-Oa5">
+                                <frame key="frameInset" minX="266" minY="317" width="93" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Generate trail"/>
+                                <connections>
+                                    <action selector="generateTrail:" destination="L3g-Mp-wyf" eventType="touchUpInside" id="WNg-fC-EkF"/>
+                                    <segue destination="V2u-y7-Hiv" kind="show" id="qhh-9W-1CK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5CA-UL-M5B">
+                                <frame key="frameInset" minY="28" width="76" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Main Menu"/>
+                                <connections>
+                                    <action selector="mainMenu:" destination="L3g-Mp-wyf" eventType="touchUpInside" id="wpg-b6-xXX"/>
+                                    <segue destination="u5m-Rs-hJ8" kind="show" id="c1g-Kh-iSh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUG-T2-d3g">
+                                <frame key="frameInset" minY="596" width="120" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Party"/>
+                                <connections>
+                                    <segue destination="S9d-BU-fD7" kind="show" id="9UO-uf-iiT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCo-JM-v1r">
+                                <frame key="frameInset" minX="152" minY="596" width="80" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Leader Board"/>
+                                <connections>
+                                    <segue destination="Zhb-3s-1fq" kind="show" id="mkl-Dk-l3N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUD-N5-iPT">
+                                <frame key="frameInset" minX="266" minY="596" width="93" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Chat"/>
+                                <connections>
+                                    <segue destination="CZL-pc-gQS" kind="show" id="YQg-md-zSK"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="run_trail.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hUj-ve-tVa">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vJZ-gH-kJl">
+                                <frame key="frameInset" minX="29" minY="318" width="217" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vg8-9T-Tbw">
+                                <frame key="frameInset" minX="16" minY="395" width="343" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Please enter the desired distance for your run below. A trail will be generated to meet your running requirement. The trail will consist of a number of checkpoints that you have to collect in a sequenece. You are free to choose your own path to the checkpoints.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dd5-8a-it7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-380" y="-1859.8200899550227"/>
+        </scene>
+        <!--Coming Soon-->
         <scene sceneID="nTD-aH-PBM">
             <objects>
-                <viewController id="V2u-y7-Hiv" sceneMemberID="viewController">
+                <viewController id="V2u-y7-Hiv" customClass="ComingSoon" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5zR-eh-2sf"/>
                         <viewControllerLayoutGuide type="bottom" id="uJI-O7-lnN"/>
@@ -107,33 +196,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This mode is still under development" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OkR-aa-6eW">
-                                <frame key="frameInset" minX="38" minY="187" width="281" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CoB-US-ouK">
-                                <frame key="frameInset" minX="122" minY="557" width="131" height="30"/>
+                                <frame key="frameInset" minX="82" minY="402" width="213" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back to Main Menu"/>
                                 <connections>
+                                    <action selector="backToMainMenu:" destination="V2u-y7-Hiv" eventType="touchUpInside" id="cbk-yb-nYB"/>
                                     <segue destination="u5m-Rs-hJ8" kind="show" id="7rQ-Co-Jeh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7U-Uh-Alg">
+                                <frame key="frameInset" minX="16" minY="601" width="84" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Party Run"/>
+                                <connections>
+                                    <segue destination="S9d-BU-fD7" kind="show" id="YA8-tn-7bC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ba-f6-Ahy">
+                                <frame key="frameInset" minX="152" minY="601" width="78" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Leader Board"/>
+                                <connections>
+                                    <segue destination="Zhb-3s-1fq" kind="show" id="nd1-44-QDD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bel-YD-7Er">
+                                <frame key="frameInset" minX="271" minY="601" width="88" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Chat"/>
+                                <connections>
+                                    <segue destination="CZL-pc-gQS" kind="show" id="YmL-jG-RRX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uB-SJ-fNe">
+                                <frame key="frameInset" minY="20" width="100" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Main Menu"/>
+                                <connections>
+                                    <action selector="mainMenu:" destination="V2u-y7-Hiv" eventType="touchUpInside" id="avy-LC-9xF"/>
+                                    <segue destination="u5m-Rs-hJ8" kind="show" id="D2R-bb-Ohh"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="run_comingsoon.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OLE-uX-bIS">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Cy-uf-7LY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-438" y="-1193"/>
+            <point key="canvasLocation" x="-439.19999999999999" y="-1193.2533733133434"/>
         </scene>
-        <!--View Controller-->
+        <!--Party-->
         <scene sceneID="uTW-7m-Icz">
             <objects>
-                <viewController id="S9d-BU-fD7" sceneMemberID="viewController">
+                <viewController id="S9d-BU-fD7" customClass="Party" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1ok-sf-2r2"/>
                         <viewControllerLayoutGuide type="bottom" id="49j-cc-2zu"/>
@@ -142,28 +262,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Invite friends to run along you, giving everyone in the group 30% more points" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eK6-et-5yA">
-                                <frame key="frameInset" minX="59" minY="45" width="287" height="112"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You can invite anyone as long as they have the app open and are within 50 feet of you" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzX-Hz-yKz">
-                                <frame key="frameInset" minX="38" minY="186" width="321" height="175"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FeP-UR-8cF">
-                                <frame key="frameInset" minX="149" minY="515" width="76" height="30"/>
+                                <frame key="frameInset" minX="6" minY="517" width="359" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Send Invite"/>
                                 <connections>
+                                    <action selector="sendInvite:" destination="S9d-BU-fD7" eventType="touchUpInside" id="8wz-MH-wMb"/>
                                     <segue destination="V2u-y7-Hiv" kind="show" id="qHd-QW-Xki"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gh-23-ZSg">
+                                <frame key="frameInset" minY="20" width="88" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Main Menu"/>
+                                <connections>
+                                    <action selector="mainMenu:" destination="S9d-BU-fD7" eventType="touchUpInside" id="DqS-Qy-U48"/>
+                                    <segue destination="u5m-Rs-hJ8" kind="show" id="d8O-CC-gPl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKP-cB-wyd">
+                                <frame key="frameInset" minX="149" minY="605" width="72" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Leader Board"/>
+                                <connections>
+                                    <segue destination="Zhb-3s-1fq" kind="show" id="7jo-RH-avo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3z-mZ-bsv">
+                                <frame key="frameInset" minX="269" minY="602" width="96" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="chat"/>
+                                <connections>
+                                    <segue destination="CZL-pc-gQS" kind="show" id="yvu-rT-wNg"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="run_Party run.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="sHD-dG-zoy">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You can invite anyone as long as they have the app open and are within 50 feet of you" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzX-Hz-yKz">
+                                <frame key="frameInset" minX="42" minY="347" width="321" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Invite friends to run along you, giving everyone in the group 30% more points" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eK6-et-5yA">
+                                <frame key="frameInset" minX="42" minY="310" width="287" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -172,10 +322,10 @@
             </objects>
             <point key="canvasLocation" x="-423.19999999999999" y="-528.48575712143929"/>
         </scene>
-        <!--View Controller-->
+        <!--Competition-->
         <scene sceneID="cMM-dn-RAf">
             <objects>
-                <viewController id="Aah-4M-If1" sceneMemberID="viewController">
+                <viewController id="Aah-4M-If1" customClass="Competition" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BeO-SE-8aL"/>
                         <viewControllerLayoutGuide type="bottom" id="Keq-sD-Ycs"/>
@@ -185,99 +335,75 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Et-Ku-BvA">
-                                <frame key="frameInset" minX="131" minY="360" width="113" height="30"/>
+                                <frame key="frameInset" minX="209" minY="516" width="150" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Checkpoint race"/>
                                 <connections>
-                                    <segue destination="9Fe-nZ-AkU" kind="show" id="iKD-ua-FV7"/>
+                                    <action selector="checkpointRace:" destination="Aah-4M-If1" eventType="touchUpInside" id="iO6-Vd-TVr"/>
+                                    <segue destination="V2u-y7-Hiv" kind="show" id="uX1-3a-ofv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxl-2Y-mQv">
-                                <frame key="frameInset" minX="108" minY="146" width="159" height="30"/>
+                                <frame key="frameInset" minX="16" minY="516" width="159" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Challenge a real runner"/>
                                 <connections>
-                                    <segue destination="Of0-hU-Hsc" kind="show" id="yp7-5N-8DG"/>
+                                    <action selector="findOpponent:" destination="Aah-4M-If1" eventType="touchUpInside" id="LRC-f7-4ck"/>
+                                    <segue destination="V2u-y7-Hiv" kind="show" id="UgE-wb-v3P"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQd-Hs-ug4">
+                                <frame key="frameInset" minX="7" minY="20" width="72" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Main Menu"/>
+                                <connections>
+                                    <action selector="mainMenu:" destination="Aah-4M-If1" eventType="touchUpInside" id="l8v-0b-rhF"/>
+                                    <segue destination="u5m-Rs-hJ8" kind="show" id="Z8Y-nJ-zHQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJB-mh-ymm">
+                                <frame key="frameInset" minX="16" minY="611" width="95" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Party"/>
+                                <connections>
+                                    <segue destination="S9d-BU-fD7" kind="show" id="0MH-u0-5ZR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9M-eO-8b5">
+                                <frame key="frameInset" minX="150" minY="605" width="80" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Leader Board"/>
+                                <connections>
+                                    <segue destination="Zhb-3s-1fq" kind="show" id="XG7-30-SkA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JsR-AQ-EwK">
+                                <frame key="frameInset" minX="277" minY="606" width="90" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Chat"/>
+                                <connections>
+                                    <segue destination="CZL-pc-gQS" kind="show" id="4Cz-UM-GYA"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="run_competition.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LfK-zC-gN3">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BaV-y9-Joi">
+                                <frame key="frameInset" minX="7" minY="352" width="360" height="156"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Click find opponent to pair up with a real person anywhere in the world, and race to see who can run a 200 meter distance faster.         Click Nearby Opponent to send a challenge request to a runner in your area.  If they accept you will both be given a checkpoint.  Whoever reaches the checkpoint first wins!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xkq-y4-BTs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="409" y="-501"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="pUD-cY-YkV">
-            <objects>
-                <viewController id="Of0-hU-Hsc" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="acq-GF-tYk"/>
-                        <viewControllerLayoutGuide type="bottom" id="kuP-yH-154"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="hcK-gM-PUS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BaV-y9-Joi">
-                                <frame key="frameInset" minX="26" minY="65" width="323" height="156"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Click the button below to pair up with a real person anywhere in the world, and race to see who can run a 200 meter distance faster.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8V-2C-UVg">
-                                <frame key="frameInset" minX="112" minY="502" width="150" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Find Runner and Start"/>
-                                <connections>
-                                    <segue destination="Bjq-m4-X70" kind="show" id="j7d-gp-0Uk"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5C-VL-ikS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1232.8" y="-744.3778110944528"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="hLV-Qh-G54">
-            <objects>
-                <viewController id="Bjq-m4-X70" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="z22-L5-Uwj"/>
-                        <viewControllerLayoutGuide type="bottom" id="i7p-3E-XR5"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Psy-2O-EBZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Coming Soon we are still working on this feature, this app is still in its early stages" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Az5-kl-vbF">
-                                <frame key="frameInset" minX="13" minY="196" width="362" height="182"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YF7-xl-wol">
-                                <frame key="frameInset" minX="149" minY="490" width="76" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Main Menu"/>
-                                <connections>
-                                    <segue destination="u5m-Rs-hJ8" kind="show" id="SAx-EL-xhS"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Dow-cI-TaG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2032.8" y="-744.3778110944528"/>
+            <point key="canvasLocation" x="408.80000000000001" y="-501.49925037481262"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -307,76 +433,63 @@
             </objects>
             <point key="canvasLocation" x="409" y="166"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Dlk-2W-eZa">
+        <!--Chat-->
+        <scene sceneID="9bM-XM-wKG">
             <objects>
-                <viewController id="9Fe-nZ-AkU" sceneMemberID="viewController">
+                <viewController id="CZL-pc-gQS" customClass="Chat" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="74v-8W-6vR"/>
-                        <viewControllerLayoutGuide type="bottom" id="ZZr-3K-mq7"/>
+                        <viewControllerLayoutGuide type="top" id="W05-Di-xTV"/>
+                        <viewControllerLayoutGuide type="bottom" id="QnY-xx-2mE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="s6Y-dt-ROb">
+                    <view key="view" contentMode="scaleToFill" id="2d5-Gh-5Y0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nN2-Ta-V9v">
-                                <frame key="frameInset" minY="110" width="375" height="185"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kE-yv-1Cn">
+                                <frame key="frameInset" minX="120" minY="534" width="134" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">This mode is for competing with someone in your area. By pressing the start button below you will send a challenge request for another runner close to your location. Once they accpet the request you both will be given the same final checkpoint. Whoever reaches the checkpoint first wins!</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lub-8q-QI5">
-                                <frame key="frameInset" minX="170" minY="570" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Start"/>
+                                <state key="normal" title="Chat"/>
                                 <connections>
-                                    <segue destination="7Rs-38-aEn" kind="show" id="nVL-Pf-iXt"/>
+                                    <action selector="chat:" destination="CZL-pc-gQS" eventType="touchUpInside" id="H1h-NY-bOA"/>
+                                    <segue destination="V2u-y7-Hiv" kind="show" id="UsZ-7j-8DJ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7E-S9-C5T">
+                                <frame key="frameInset" minY="20" width="86" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Main Menu"/>
+                                <connections>
+                                    <action selector="mainMenu:" destination="CZL-pc-gQS" eventType="touchUpInside" id="ZMK-mM-f6C"/>
+                                    <segue destination="u5m-Rs-hJ8" kind="show" id="moJ-r6-VRE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gw-us-Hya">
+                                <frame key="frameInset" minX="149" minY="603" width="80" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Leader Board"/>
+                                <connections>
+                                    <segue destination="Zhb-3s-1fq" kind="show" id="gkW-b2-zWU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SF5-XT-qMj">
+                                <frame key="frameInset" minX="20" minY="603" width="96" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Party"/>
+                                <connections>
+                                    <segue destination="S9d-BU-fD7" kind="show" id="qWC-VL-BLw"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="run_chat.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="1ri-qX-o1L">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="P2f-rI-hGC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uEM-7S-TB7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1232.8" y="-72.413793103448285"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="F5j-BB-gUY">
-            <objects>
-                <viewController id="7Rs-38-aEn" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="FdM-yL-4RD"/>
-                        <viewControllerLayoutGuide type="bottom" id="FEZ-Oq-IBO"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="xNe-bR-3Ec">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This mode is still under development" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGs-7a-7ZY">
-                                <frame key="frameInset" minX="47" minY="154" width="281" height="133"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y16-fC-Msp">
-                                <frame key="frameInset" minX="109" minY="574" width="157" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back to the main manu"/>
-                                <connections>
-                                    <segue destination="u5m-Rs-hJ8" kind="show" id="X9p-Nn-T2S"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="svG-jM-4iF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1879.2" y="-72.413793103448285"/>
+            <point key="canvasLocation" x="-487.19999999999999" y="932.38380809595208"/>
         </scene>
         <!--Leader Board-->
         <scene sceneID="1lG-i1-T1k">
@@ -391,23 +504,66 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNp-rf-icT">
-                                <frame key="frameInset" minX="109" minY="584" width="157" height="30"/>
+                                <frame key="frameInset" minX="109" minY="537" width="157" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back to the main menu"/>
+                                <state key="normal" title="View"/>
                                 <connections>
-                                    <segue destination="u5m-Rs-hJ8" kind="show" id="Oju-ws-qht"/>
+                                    <action selector="view:" destination="Zhb-3s-1fq" eventType="touchUpInside" id="PmM-uu-3OF"/>
+                                    <segue destination="V2u-y7-Hiv" kind="show" id="E2H-c2-hsd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVZ-Br-Zby">
+                                <frame key="frameInset" minY="20" width="72" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Main Menu"/>
+                                <connections>
+                                    <action selector="mainMenu:" destination="Zhb-3s-1fq" eventType="touchUpInside" id="c0G-pR-jIT"/>
+                                    <segue destination="u5m-Rs-hJ8" kind="show" id="zrM-TG-Ix7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htB-p5-UCE">
+                                <frame key="frameInset" minY="602" width="120" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Party"/>
+                                <connections>
+                                    <segue destination="S9d-BU-fD7" kind="show" id="xgs-Y7-a5U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o1P-eO-IpX">
+                                <frame key="frameInset" minX="252" minY="602" width="107" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Chat"/>
+                                <connections>
+                                    <segue destination="CZL-pc-gQS" kind="show" id="uqa-UX-KSf"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="run_leader board.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="6uU-Wo-zIm">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F9w-nX-2fU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="409" y="844"/>
+            <point key="canvasLocation" x="408.80000000000001" y="843.32833583208401"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="main.jpg" width="3125" height="5558"/>
+        <image name="run_Party run.jpg" width="3125" height="5558"/>
+        <image name="run_chat.jpg" width="3125" height="5558"/>
+        <image name="run_comingsoon.jpg" width="3125" height="5558"/>
+        <image name="run_competition.jpg" width="3125" height="5558"/>
+        <image name="run_leader board.jpg" width="3125" height="5558"/>
+        <image name="run_trail.jpg" width="3125" height="5558"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7rQ-Co-Jeh"/>
+        <segue reference="zrM-TG-Ix7"/>
+        <segue reference="gkW-b2-zWU"/>
+        <segue reference="uqa-UX-KSf"/>
+        <segue reference="E2H-c2-hsd"/>
+        <segue reference="xgs-Y7-a5U"/>
     </inferredMetricsTieBreakers>
 </document>
