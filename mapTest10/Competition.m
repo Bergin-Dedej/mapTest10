@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#include "CallPhp.h"
 
 @import UIKit;
 
@@ -21,21 +22,14 @@
     
 }
 
-- (IBAction)view:(id)sender {
-    
-    NSMutableURLRequest *request =
-    [[NSMutableURLRequest alloc] initWithURL:
-     [NSURL URLWithString:@"http://www.fsociety777.site/run/increment_run_analytics.php?button=leaderBoard_view"]];
-    
-    [[NSURLConnection alloc]
-     initWithRequest:request delegate:self];
-}
-
 - (IBAction)checkpointRace:(id)sender {
+    [CallPhp incrementRun:@"button=competition_checkpoint"];
 }
 - (IBAction)findOpponent:(id)sender {
+    [CallPhp incrementRun:@"button=competition_challenge"];
 }
 - (IBAction)mainMenu:(id)sender {
+    [CallPhp incrementRun:@"button=competition_menu"];
 }
 
 @end

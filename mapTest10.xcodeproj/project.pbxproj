@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		500BC2151D92B2DC00A96B65 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 500BC2141D92B2DC00A96B65 /* Podfile */; };
+		500F10B61DB50A5200864C9E /* run_quick start.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 500F10B51DB50A5200864C9E /* run_quick start.jpg */; };
+		500F10B81DB50C0800864C9E /* QuickStart.m in Sources */ = {isa = PBXBuildFile; fileRef = 500F10B71DB50C0800864C9E /* QuickStart.m */; };
 		501A97EF1DAE56C6007979FD /* main.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 501A97EE1DAE56C6007979FD /* main.jpg */; };
 		501A97F71DAFBB59007979FD /* run_chat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 501A97F21DAFBB58007979FD /* run_chat.jpg */; };
 		501A97F81DAFBB59007979FD /* run_competition.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 501A97F31DAFBB58007979FD /* run_competition.jpg */; };
@@ -37,6 +39,8 @@
 		509CF0831DB29BB9004B2ECF /* Party.m in Sources */ = {isa = PBXBuildFile; fileRef = 509CF0821DB29BB9004B2ECF /* Party.m */; };
 		509CF0851DB29C0A004B2ECF /* TrailRun.m in Sources */ = {isa = PBXBuildFile; fileRef = 509CF0841DB29C0A004B2ECF /* TrailRun.m */; };
 		509CF0871DB29E0B004B2ECF /* ComingSoon.m in Sources */ = {isa = PBXBuildFile; fileRef = 509CF0861DB29E0B004B2ECF /* ComingSoon.m */; };
+		509CF0891DB2A26E004B2ECF /* CallPhp.h in Sources */ = {isa = PBXBuildFile; fileRef = 509CF0881DB2A26E004B2ECF /* CallPhp.h */; };
+		509CF08B1DB2B0E0004B2ECF /* CallPhp.m in Sources */ = {isa = PBXBuildFile; fileRef = 509CF08A1DB2B0E0004B2ECF /* CallPhp.m */; };
 		D213DD774696697B805D8E91 /* libPods-mapTest10.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1A5E43BB166CF1FFA3A2DF /* libPods-mapTest10.a */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +103,8 @@
 /* Begin PBXFileReference section */
 		08C247C093BAB220C981A5CF /* Pods-mapTest10.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapTest10.release.xcconfig"; path = "mapTest10/Pods/Target Support Files/Pods-mapTest10/Pods-mapTest10.release.xcconfig"; sourceTree = "<group>"; };
 		500BC2141D92B2DC00A96B65 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		500F10B51DB50A5200864C9E /* run_quick start.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "run_quick start.jpg"; path = "Images/run_quick start.jpg"; sourceTree = "<group>"; };
+		500F10B71DB50C0800864C9E /* QuickStart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickStart.m; sourceTree = "<group>"; };
 		501A97EE1DAE56C6007979FD /* main.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = main.jpg; path = Images/main.jpg; sourceTree = "<group>"; };
 		501A97F21DAFBB58007979FD /* run_chat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = run_chat.jpg; path = Images/run_chat.jpg; sourceTree = "<group>"; };
 		501A97F31DAFBB58007979FD /* run_competition.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = run_competition.jpg; path = Images/run_competition.jpg; sourceTree = "<group>"; };
@@ -118,6 +124,7 @@
 		506C44AD1D9950CE00879F40 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
 		506C44AF1D9950CE00879F40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		506C44B11D9950CE00879F40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		507091D21DBA3DB4003F35D0 /* MainMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainMenu.h; sourceTree = "<group>"; };
 		50868B701DA27D9800901142 /* LeaderBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaderBoard.m; sourceTree = "<group>"; };
 		5092AD8F1D92B0CE009E8E8E /* mapTest10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mapTest10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5092AD931D92B0CE009E8E8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -140,6 +147,8 @@
 		509CF0821DB29BB9004B2ECF /* Party.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Party.m; sourceTree = "<group>"; };
 		509CF0841DB29C0A004B2ECF /* TrailRun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrailRun.m; sourceTree = "<group>"; };
 		509CF0861DB29E0B004B2ECF /* ComingSoon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComingSoon.m; sourceTree = "<group>"; };
+		509CF0881DB2A26E004B2ECF /* CallPhp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallPhp.h; sourceTree = "<group>"; };
+		509CF08A1DB2B0E0004B2ECF /* CallPhp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallPhp.m; sourceTree = "<group>"; };
 		9F1A5E43BB166CF1FFA3A2DF /* libPods-mapTest10.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mapTest10.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53D651BD3562165895BA805 /* Pods-mapTest10.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapTest10.debug.xcconfig"; path = "mapTest10/Pods/Target Support Files/Pods-mapTest10/Pods-mapTest10.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,6 +189,7 @@
 		501A97ED1DAE56A6007979FD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				500F10B51DB50A5200864C9E /* run_quick start.jpg */,
 				501A97FC1DB1100A007979FD /* run_comingsoon.jpg */,
 				501A97F21DAFBB58007979FD /* run_chat.jpg */,
 				501A97F31DAFBB58007979FD /* run_competition.jpg */,
@@ -248,7 +258,11 @@
 				5092AD981D92B0CE009E8E8E /* ViewController.h */,
 				5092AD991D92B0CE009E8E8E /* ViewController.m */,
 				5092AD9B1D92B0CE009E8E8E /* Main.storyboard */,
+				507091D21DBA3DB4003F35D0 /* MainMenu.h */,
 				506C44941D993D7600879F40 /* MainMenu.m */,
+				500F10B71DB50C0800864C9E /* QuickStart.m */,
+				509CF0881DB2A26E004B2ECF /* CallPhp.h */,
+				509CF08A1DB2B0E0004B2ECF /* CallPhp.m */,
 				50868B701DA27D9800901142 /* LeaderBoard.m */,
 				509CF07E1DB29B58004B2ECF /* Chat.m */,
 				509CF0841DB29C0A004B2ECF /* TrailRun.m */,
@@ -415,17 +429,17 @@
 					506C44971D9950CD00879F40 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = TD673V7Y5F;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					506C44A31D9950CE00879F40 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = TD673V7Y5F;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					5092AD8E1D92B0CE009E8E8E = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = TD673V7Y5F;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					5092ADA71D92B0CE009E8E8E = {
 						CreatedOnToolsVersion = 8.0;
@@ -494,6 +508,7 @@
 				501A97F91DAFBB59007979FD /* run_leader board.jpg in Resources */,
 				501A97FB1DAFBB59007979FD /* run_trail.jpg in Resources */,
 				5092AD9D1D92B0CE009E8E8E /* Main.storyboard in Resources */,
+				500F10B61DB50A5200864C9E /* run_quick start.jpg in Resources */,
 				501A97F71DAFBB59007979FD /* run_chat.jpg in Resources */,
 				501A97F81DAFBB59007979FD /* run_competition.jpg in Resources */,
 			);
@@ -582,8 +597,11 @@
 				509CF07F1DB29B58004B2ECF /* Chat.m in Sources */,
 				509CF0831DB29BB9004B2ECF /* Party.m in Sources */,
 				5092AD9A1D92B0CE009E8E8E /* ViewController.m in Sources */,
+				509CF0891DB2A26E004B2ECF /* CallPhp.h in Sources */,
+				500F10B81DB50C0800864C9E /* QuickStart.m in Sources */,
 				506C44951D993D7600879F40 /* MainMenu.m in Sources */,
 				509CF0811DB29B6F004B2ECF /* Competition.m in Sources */,
+				509CF08B1DB2B0E0004B2ECF /* CallPhp.m in Sources */,
 				509CF0871DB29E0B004B2ECF /* ComingSoon.m in Sources */,
 				5092AD971D92B0CE009E8E8E /* AppDelegate.m in Sources */,
 				5092AD941D92B0CE009E8E8E /* main.m in Sources */,
@@ -663,11 +681,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = TD673V7Y5F;
 				INFOPLIST_FILE = "WatchMeTestMap Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapTest10.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "48478250-4f38-4d6d-b40f-03cd44dfac31";
+				PROVISIONING_PROFILE_SPECIFIER = "Workadda MVP Watch Kit Extension";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -679,11 +701,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = TD673V7Y5F;
 				INFOPLIST_FILE = "WatchMeTestMap Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapTest10.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "48478250-4f38-4d6d-b40f-03cd44dfac31";
+				PROVISIONING_PROFILE_SPECIFIER = "Workadda MVP Watch Kit Extension";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -695,11 +722,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = TD673V7Y5F;
 				IBSC_MODULE = WatchMeTestMap_Extension;
 				INFOPLIST_FILE = WatchMeTestMap/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapTest10.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9db32ea5-58a8-409a-beb2-7ce4b4da6e1c";
+				PROVISIONING_PROFILE_SPECIFIER = "Workadda MVP Watch Kit";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -711,11 +743,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = TD673V7Y5F;
 				IBSC_MODULE = WatchMeTestMap_Extension;
 				INFOPLIST_FILE = WatchMeTestMap/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapTest10.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9db32ea5-58a8-409a-beb2-7ce4b4da6e1c";
+				PROVISIONING_PROFILE_SPECIFIER = "Workadda MVP Watch Kit";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -744,6 +780,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -792,6 +829,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -818,12 +856,16 @@
 			baseConfigurationReference = D53D651BD3562165895BA805 /* Pods-mapTest10.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = TD673V7Y5F;
 				INFOPLIST_FILE = mapTest10/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapTest10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e74af125-f684-4121-9dbc-4c49c96a79cf";
+				PROVISIONING_PROFILE_SPECIFIER = "Workadda MVP";
 			};
 			name = Debug;
 		};
@@ -832,12 +874,16 @@
 			baseConfigurationReference = 08C247C093BAB220C981A5CF /* Pods-mapTest10.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = TD673V7Y5F;
 				INFOPLIST_FILE = mapTest10/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapTest10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e74af125-f684-4121-9dbc-4c49c96a79cf";
+				PROVISIONING_PROFILE_SPECIFIER = "Workadda MVP";
 			};
 			name = Release;
 		};
@@ -845,6 +891,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = TD673V7Y5F;
 				INFOPLIST_FILE = mapTest10Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -858,6 +905,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = TD673V7Y5F;
 				INFOPLIST_FILE = mapTest10Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -870,6 +918,7 @@
 		5092ADC31D92B0CE009E8E8E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = TD673V7Y5F;
 				INFOPLIST_FILE = mapTest10UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -882,6 +931,7 @@
 		5092ADC41D92B0CE009E8E8E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = TD673V7Y5F;
 				INFOPLIST_FILE = mapTest10UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

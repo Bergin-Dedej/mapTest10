@@ -1,5 +1,5 @@
 //
-//  TrailRun.m
+//  Chat.m
 //  mapTest10
 //
 //  Created by Ber Jr on 2016-10-15.
@@ -11,22 +11,23 @@
 
 @import UIKit;
 
-@interface TrailRun: UIViewController
+@interface Chat: UIViewController
 
 @end
 
-@implementation TrailRun
+@implementation Chat
 
 - (void) viewDidLoad{
     [super viewDidLoad];
     
 }
 
-- (IBAction)generateTrail:(id)sender {
-    [CallPhp incrementRun:@"button=trail_generateTrail"];
+
+- (IBAction)chat:(id)sender {
+    [CallPhp incrementRun:@"button=chat_chat"];
 }
 - (IBAction)mainMenu:(id)sender {
-    [CallPhp incrementRun:@"button=trail_menu"];
+    [CallPhp incrementRun:@"button=chat_menu"];
 }
 
 @end

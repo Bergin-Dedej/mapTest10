@@ -1,8 +1,8 @@
 //
-//  LeaderBoard.m
+//  QuickStart.m
 //  mapTest10
 //
-//  Created by Ber Jr on 2016-10-03.
+//  Created by Ber Jr on 2016-10-17.
 //  Copyright © 2016 Ber Jr. All rights reserved.
 //
 
@@ -11,22 +11,22 @@
 
 @import UIKit;
 
-@interface LeaderBoard: UIViewController
+@interface QuickStart: UIViewController
 
 @end
 
-@implementation LeaderBoard
+@implementation QuickStart
 
 - (void) viewDidLoad{
     [super viewDidLoad];
 }
 
 - (IBAction)view:(id)sender {
-    [CallPhp incrementRun:@"button=leaderBoard_view"];
+    [CallPhp incrementRun:@"button=quickStart_start"];
 }
 
 - (IBAction)mainMenu:(id)sender {
-    [CallPhp incrementRun:@"button=leaderBoard_menu"];
+    [CallPhp incrementRun:@"button=quickStart_menu"];
 }
 
 @end

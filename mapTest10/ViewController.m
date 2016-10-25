@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import <GoogleMaps/GoogleMaps.h>
 #import <MapKit/MapKit.h>
+#import "MainMenu.h"
+
 @import WatchConnectivity;
 
 @interface ViewController () <WCSessionDelegate>
@@ -36,8 +38,9 @@
     MKMapPoint p2 = MKMapPointForCoordinate(locationManager.location.coordinate);
     distanceRun = MKMetersBetweenMapPoints(p1, p2);
     
-    if(distanceRun >= 150){
-        NSString *congrats = @"Congrats you ran past 150 meters!";
+    if(distanceRun >= 200){
+        NSString *congrats = @"Congrats you ran past 200 meters!";
+        [self performSegueWithIdentifier:@"segueToMain" sender:self];
         NSLog(congrats);
     }
     NSString *myString = [NSString stringWithFormat:@"%f", distanceRun];
@@ -45,8 +48,17 @@
     NSLog(myString);
     [self sendToWatch];
 
-    camera = [GMSCameraPosition cameraWithLatitude:locationManager.location.coordinate.latitude longitude:locationManager.location.coordinate.longitude zoom:17];
+    camera = [GMSCameraPosition cameraWithLatitude:locationManager.location.coordinate.latitude longitude:locationManager.location.coordinate.longitude zoom:16];
     [_mapView animateToCameraPosition:camera];
+ 
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"segueToMain"]) {
+        MainMenu *menuView = [segue destinationViewController];
+        [menuView setSentPoints:@"200"];
+    }
  
 }
 
@@ -77,7 +89,7 @@
     startLongitude = locationManager.location.coordinate.longitude;
     startLocation = locationManager.location.coordinate;
     
-    camera = [GMSCameraPosition cameraWithLatitude:locationManager.location.coordinate.latitude longitude:locationManager.location.coordinate.longitude zoom:17];
+    camera = [GMSCameraPosition cameraWithLatitude:locationManager.location.coordinate.latitude longitude:locationManager.location.coordinate.longitude zoom:12];
 
     _mapView = [GMSMapView mapWithFrame:CGRectMake(0,0,100,100) camera:camera];
     _mapView.myLocationEnabled = YES;
@@ -85,7 +97,7 @@
     //_mapView.padding = mapInsets;
     self.view = _mapView;
     CLLocationCoordinate2D circleCenter = CLLocationCoordinate2DMake(locationManager.location.coordinate.latitude, locationManager.location.coordinate.longitude);
-    GMSCircle *circ = [GMSCircle circleWithPosition:circleCenter radius:150];
+    GMSCircle *circ = [GMSCircle circleWithPosition:circleCenter radius:200];
     circ.map = _mapView;
     
     GMSMarker *marker = [[GMSMarker alloc] init];

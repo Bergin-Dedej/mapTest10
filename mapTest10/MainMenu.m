@@ -7,67 +7,70 @@
 //
 
 #import <Foundation/Foundation.h>
+#include "CallPhp.h"
+#import "MainMenu.h"
 
 @import UIKit;
 
-@interface MainMenu: UIViewController
+@interface MainMenu ()
+@property (weak, nonatomic) IBOutlet UILabel *totalPointsLabel;
+@property (weak, nonatomic) IBOutlet UIButton *leaderBoardButton;
+@property (weak, nonatomic) IBOutlet UIButton *partyRunButton;
+@property (weak, nonatomic) IBOutlet UIButton *competitionModeButton;
+@property (weak, nonatomic) IBOutlet UIButton *chatButton;
+@property (weak, nonatomic) IBOutlet UIButton *trailButton;
 
 @end
 
-@implementation MainMenu
+@implementation MainMenu{
+    NSString * totalPoints;
+    NSString * totalDistance;
+    int totalPointsInt;
+}
+
+@synthesize SentPoints;
 
 - (void) viewDidLoad{
     [super viewDidLoad];
+    if(SentPoints == @"200"){
+        totalPointsInt += 200 + totalPointsInt;
+        totalPoints = [NSString stringWithFormat:@"%d",totalPointsInt];
+        totalDistance = [NSString stringWithFormat:@"%d m", totalPointsInt];
+        [_totalPointsLabel setText:totalPoints];
+        [_totalMeters setText:totalDistance];
+    }
     
+    NSError *error;
+    NSString *url_string = [NSString stringWithFormat: @"http://www.fsociety777.site/run/selectHide.php"];
+    NSData *data = [NSData dataWithContentsOfURL: [NSURL URLWithString:url_string]];
+    NSMutableArray *json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+    NSString *hidden = [json valueForKey:@"hideColumn"];
+    if([hidden  isEqual: @"1"]){
+        [self.leaderBoardButton setEnabled:NO];
+        [self.partyRunButton setEnabled:NO];
+        [self.competitionModeButton setEnabled:NO];
+        [self.chatButton setEnabled:NO];
+        [self.trailButton setEnabled:NO];
+    }
 }
 
 - (IBAction)startRunning:(id)sender {
-    NSMutableURLRequest *request =
-    [[NSMutableURLRequest alloc] initWithURL:
-     [NSURL URLWithString:@"http://www.fsociety777.site/run/increment_run_analytics.php?button=main_startRunning"]];
-    
-    [[NSURLConnection alloc]
-     initWithRequest:request delegate:self];
+        [CallPhp incrementRun:@"button=main_startRunning"];
 }
 - (IBAction)leaderBoard:(id)sender {
-    NSMutableURLRequest *request =
-    [[NSMutableURLRequest alloc] initWithURL:
-     [NSURL URLWithString:@"http://www.fsociety777.site/run/increment_run_analytics.php?button=main_leaderBoard"]];
-    
-    [[NSURLConnection alloc]
-     initWithRequest:request delegate:self];
+        [CallPhp incrementRun:@"button=main_leaderBoard"];
 }
 - (IBAction)partyRun:(id)sender {
-    NSMutableURLRequest *request =
-    [[NSMutableURLRequest alloc] initWithURL:
-     [NSURL URLWithString:@"http://www.fsociety777.site/run/increment_run_analytics.php?button=main_partyRun"]];
-    
-    [[NSURLConnection alloc]
-     initWithRequest:request delegate:self];
+        [CallPhp incrementRun:@"button=main_partyRun"];
 }
 - (IBAction)competition:(id)sender {
-    NSMutableURLRequest *request =
-    [[NSMutableURLRequest alloc] initWithURL:
-     [NSURL URLWithString:@"http://www.fsociety777.site/run/increment_run_analytics.php?button=main_competition"]];
-    
-    [[NSURLConnection alloc]
-     initWithRequest:request delegate:self];
+        [CallPhp incrementRun:@"button=main_competition"];
 }
 - (IBAction)chat:(id)sender {
-    NSMutableURLRequest *request =
-    [[NSMutableURLRequest alloc] initWithURL:
-     [NSURL URLWithString:@"http://www.fsociety777.site/run/increment_run_analytics.php?button=main_chat"]];
-    
-    [[NSURLConnection alloc]
-     initWithRequest:request delegate:self];
+        [CallPhp incrementRun:@"button=main_chat"];
 }
 - (IBAction)trail:(id)sender {
-    NSMutableURLRequest *request =
-    [[NSMutableURLRequest alloc] initWithURL:
-     [NSURL URLWithString:@"http://www.fsociety777.site/run/increment_run_analytics.php?button=main_trail"]];
-    
-    [[NSURLConnection alloc]
-     initWithRequest:request delegate:self];
+        [CallPhp incrementRun:@"button=main_trail"];
 }
 
 @end
