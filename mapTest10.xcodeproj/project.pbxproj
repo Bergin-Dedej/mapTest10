@@ -17,6 +17,7 @@
 		501A97FA1DAFBB59007979FD /* run_Party run.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 501A97F51DAFBB59007979FD /* run_Party run.jpg */; };
 		501A97FB1DAFBB59007979FD /* run_trail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 501A97F61DAFBB59007979FD /* run_trail.jpg */; };
 		501A97FD1DB1100A007979FD /* run_comingsoon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 501A97FC1DB1100A007979FD /* run_comingsoon.jpg */; };
+		506500CA1DC7624200AFFB34 /* main_unhidden.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 506500C91DC7624200AFFB34 /* main_unhidden.jpg */; };
 		506C44951D993D7600879F40 /* MainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 506C44941D993D7600879F40 /* MainMenu.m */; };
 		506C449C1D9950CE00879F40 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506C449A1D9950CE00879F40 /* Interface.storyboard */; };
 		506C449E1D9950CE00879F40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506C449D1D9950CE00879F40 /* Assets.xcassets */; };
@@ -112,6 +113,7 @@
 		501A97F51DAFBB59007979FD /* run_Party run.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "run_Party run.jpg"; path = "Images/run_Party run.jpg"; sourceTree = "<group>"; };
 		501A97F61DAFBB59007979FD /* run_trail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = run_trail.jpg; path = Images/run_trail.jpg; sourceTree = "<group>"; };
 		501A97FC1DB1100A007979FD /* run_comingsoon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = run_comingsoon.jpg; path = Images/run_comingsoon.jpg; sourceTree = "<group>"; };
+		506500C91DC7624200AFFB34 /* main_unhidden.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = main_unhidden.jpg; path = Images/main_unhidden.jpg; sourceTree = "<group>"; };
 		506C44941D993D7600879F40 /* MainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenu.m; sourceTree = "<group>"; };
 		506C44981D9950CD00879F40 /* WatchMeTestMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchMeTestMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		506C449B1D9950CE00879F40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 		501A97ED1DAE56A6007979FD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				506500C91DC7624200AFFB34 /* main_unhidden.jpg */,
 				500F10B51DB50A5200864C9E /* run_quick start.jpg */,
 				501A97FC1DB1100A007979FD /* run_comingsoon.jpg */,
 				501A97F21DAFBB58007979FD /* run_chat.jpg */,
@@ -507,6 +510,7 @@
 				500BC2151D92B2DC00A96B65 /* Podfile in Resources */,
 				501A97F91DAFBB59007979FD /* run_leader board.jpg in Resources */,
 				501A97FB1DAFBB59007979FD /* run_trail.jpg in Resources */,
+				506500CA1DC7624200AFFB34 /* main_unhidden.jpg in Resources */,
 				5092AD9D1D92B0CE009E8E8E /* Main.storyboard in Resources */,
 				500F10B61DB50A5200864C9E /* run_quick start.jpg in Resources */,
 				501A97F71DAFBB59007979FD /* run_chat.jpg in Resources */,
@@ -866,6 +870,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "e74af125-f684-4121-9dbc-4c49c96a79cf";
 				PROVISIONING_PROFILE_SPECIFIER = "Workadda MVP";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -884,6 +889,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "e74af125-f684-4121-9dbc-4c49c96a79cf";
 				PROVISIONING_PROFILE_SPECIFIER = "Workadda MVP";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

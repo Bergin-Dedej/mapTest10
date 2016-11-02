@@ -116,6 +116,7 @@
                         <outlet property="chatButton" destination="lSG-su-LWF" id="M8G-nX-QPg"/>
                         <outlet property="competitionModeButton" destination="9gA-wC-Om7" id="xr1-bG-VjU"/>
                         <outlet property="leaderBoardButton" destination="DbE-jB-jpo" id="Ndw-Xt-FL9"/>
+                        <outlet property="mainMenuImage" destination="L1Q-iC-Rzl" id="HNP-bK-u7Z"/>
                         <outlet property="partyRunButton" destination="AWn-Zj-mYK" id="hpG-dw-qKx"/>
                         <outlet property="totalMeters" destination="cU9-WN-62s" id="Mq3-A2-xaQ"/>
                         <outlet property="totalPointsLabel" destination="1a2-b7-Hyv" id="ooX-gd-rDP"/>
@@ -631,7 +632,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="main.jpg" width="1242" height="2208"/>
+        <image name="main.jpg" width="5175" height="9200"/>
         <image name="run_Party run.jpg" width="1242" height="2208"/>
         <image name="run_chat.jpg" width="1242" height="2208"/>
         <image name="run_comingsoon.jpg" width="1242" height="2208"/>

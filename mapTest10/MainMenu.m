@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *competitionModeButton;
 @property (weak, nonatomic) IBOutlet UIButton *chatButton;
 @property (weak, nonatomic) IBOutlet UIButton *trailButton;
+@property (weak, nonatomic) IBOutlet UIImageView *mainMenuImage;
 
 @end
 
@@ -26,6 +27,7 @@
     NSString * totalPoints;
     NSString * totalDistance;
     int totalPointsInt;
+    UIImage * hiddenImage;
 }
 
 @synthesize SentPoints;
@@ -45,12 +47,29 @@
     NSData *data = [NSData dataWithContentsOfURL: [NSURL URLWithString:url_string]];
     NSMutableArray *json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
     NSString *hidden = [json valueForKey:@"hideColumn"];
+    
+    hiddenImage = [UIImage imageNamed:@"main_unhidden.jpg"];
+    
+    [self.leaderBoardButton setEnabled:NO];
+    [self.partyRunButton setEnabled:NO];
+    [self.competitionModeButton setEnabled:NO];
+    [self.chatButton setEnabled:NO];
+    [self.trailButton setEnabled:NO];
+    
+    
     if([hidden  isEqual: @"1"]){
         [self.leaderBoardButton setEnabled:NO];
         [self.partyRunButton setEnabled:NO];
         [self.competitionModeButton setEnabled:NO];
         [self.chatButton setEnabled:NO];
         [self.trailButton setEnabled:NO];
+    } else if ([hidden isEqual : @"0"]){
+        [self.leaderBoardButton setEnabled:YES];
+        [self.partyRunButton setEnabled:YES];
+        [self.competitionModeButton setEnabled:YES];
+        [self.chatButton setEnabled:YES];
+        [self.trailButton setEnabled:YES];
+        [self.mainMenuImage setImage:hiddenImage];
     }
 }
 
